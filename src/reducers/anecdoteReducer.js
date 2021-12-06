@@ -1,8 +1,6 @@
 import anecdoteService from '../services/anecdotes';
 
 const anecdoteReducer = (state = [], action) => {
-  console.log('state now: ', state);
-  console.log('action', action);
 
   switch (action.type) {
   case 'VOTE':
@@ -37,7 +35,7 @@ export const voteAnecdote = (id) => {
   return async dispatch => {
     const anecdotes = await anecdoteService.getAll();
     const anecdoteToChange = anecdotes.find(a => a.id === id);
-    const changedAnecdote = {...anecdoteToChange, votes: anecdoteToChange.votes + 1};
+    const changedAnecdote = { ...anecdoteToChange, votes: anecdoteToChange.votes + 1 };
 
     const updatedAnecdote = await anecdoteService.update(id, changedAnecdote);
     dispatch({

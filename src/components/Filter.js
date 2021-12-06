@@ -1,11 +1,9 @@
 import React from 'react';
-import {connect} from 'react-redux';
-import {setFilter} from '../reducers/filterReducer';
+import { connect } from 'react-redux';
+import { setFilter } from '../reducers/filterReducer';
 
 const Filter = (props) => {
   const handleChange = (event) => {
-    // input-field value is in variable event.target.value
-    console.log('filter ', event.target.value);
     props.setFilter(event.target.value);
   };
 
@@ -20,5 +18,5 @@ const Filter = (props) => {
   );
 };
 
-const ConnectedFilter = connect(null, {setFilter})(Filter);
+const ConnectedFilter = connect(null, { setFilter })(Filter);
 export default ConnectedFilter;

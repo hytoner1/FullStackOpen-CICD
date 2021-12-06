@@ -1,10 +1,10 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
 const Notification = (props) => {
   if (props.notification === '') {
     return (
-      <div> 
+      <div>
       </div>
     );
   }

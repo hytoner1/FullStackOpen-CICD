@@ -18,7 +18,6 @@ const getAll = async () => {
 };
 
 const createNew = async (text) => {
-  console.log('createNew', text);
   const object = asObject(text);
   const response = await axios.post(baseUrl, object);
   return response.data;
@@ -29,4 +28,4 @@ const update = async (id, newObj) => {
   return res.data;
 };
 
-export default {getAll, createNew, update};
+export default { getAll, createNew, update };
