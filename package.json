@@ -17,8 +17,9 @@
   },
   "scripts": {
     "server": "json-server -p3001 --watch db.json",
-    "start": "react-scripts start",
     "build": "react-scripts build",
+    "start": "react-scripts start",
+    "serve": "serve -s build",
     "eslint": "eslint \"./src/**/*.{js,jsx}\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
