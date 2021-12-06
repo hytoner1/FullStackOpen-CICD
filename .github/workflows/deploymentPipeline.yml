@@ -31,9 +31,6 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "ronicdotes" #Must be unique in Heroku
           heroku_email: "roni.hytonen93@gmail.com"
-          healthcheck: "https://ronicdotes.herokuapp.com/health"
-          checkstring: "ok"
-          rollbackonhealthcheckfailed: true
 
       - uses: actions/checkout@v2
       - name: Bump version and push tag
