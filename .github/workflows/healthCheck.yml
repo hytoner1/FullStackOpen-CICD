@@ -1,0 +1,14 @@
+name: Periodic Health Check
+
+on:
+  schedule:
+  - cron: '30 3 * * 0'
+
+jobs:
+  healthcheck:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Check the deployed service URL
+        uses: jtalk/url-health-check-action@v2
+        with:
+          url: https://ronidex.herokuapp.com/health
