@@ -34,4 +34,4 @@ const AnecdoteList = () => {
   )
 }
 
-export default AnecdoteList;
+export default AnecdoteList

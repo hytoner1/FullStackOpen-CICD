@@ -10,6 +10,7 @@ const AnecdoteForm = (props) => {
     const { createAnecdote, setNotification } = props
 
     const text = event.target.text.value
+    // eslint-disable-next-line
     event.target.text.value = ''
 
     createAnecdote(text)
