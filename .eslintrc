@@ -8,12 +8,17 @@
     "jest/globals": true,
     "cypress/globals": true
   },
+  "plugins": [
+    "react",
+    "jest",
+    "cypress"
+  ],
   "rules": {
     "semi": [
       "error",
       "never"
     ],
-    "max-len": [1, 200],
+    "max-len": [ 1, 200 ],
     "no-shadow": 0,
     "no-plusplus": 0,
     "import/no-unresolved": "off",
