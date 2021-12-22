@@ -3,7 +3,7 @@
 
 HY Full stack open MOOC part 11.
 
-CI/CD basics with Github actions for my own Anecdotes project.
+CI/CD basics with Github actions for my own Anecdotes project (from part 7).
 This project code is running at https://ronicdotes.herokuapp.com.
 
 The code is based on the example app from https://github.com/fullstack-hy2020/create-app.
